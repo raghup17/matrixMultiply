@@ -48,6 +48,7 @@ set_property "simulator_language" "Mixed" $obj
 
 # Create block design
 source createbd.tcl
+make_wrapper -files [get_files ${orig_proj_dir}/matrixMultiply.srcs/sources_1/bd/matrixMultiply/matrixMultiply.bd] -top
 
 # Create 'sources_1' fileset (if not found)
 if {[string equal [get_filesets sources_1] ""]} {
