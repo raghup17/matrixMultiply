@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xd" xd:functionName="mmult_top" xd:componentRef="mmult_top" xd:clockPeriod="10.000000">
+  <xd:controlReg xd:name="control" xd:interfaceRef="S_AXI_CONTROL" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="a[]" xd:originalName="a" xd:direction="in" xd:interfaceRef="M_AXI_A" xd:busTypeRef="aximm"/>
+  <xd:arg xd:name="b[]" xd:originalName="b" xd:direction="in" xd:interfaceRef="M_AXI_B" xd:busTypeRef="aximm"/>
+  <xd:arg xd:name="c[]" xd:originalName="c" xd:direction="out" xd:interfaceRef="M_AXI_C" xd:busTypeRef="aximm"/>
+  <xd:latencyEstimates xd:best-case="13825" xd:worst-case="13825" xd:average-case="13825"/>
+  <xd:resourceEstimates xd:LUT="2458" xd:FF="9915" xd:BRAM="0" xd:DSP="256"/>
+</xd:acceleratorMap>

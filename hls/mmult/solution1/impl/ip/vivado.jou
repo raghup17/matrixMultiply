@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.3 (64-bit)
+# SW Build 329390 on Wed Oct 16 18:26:55 MDT 2013
+# IP Build 192953 on Wed Oct 16 08:44:02 MDT 2013
+# Start of session at: Tue May 27 16:50:02 2014
+# Process ID: 6460
+# Log file: /home/raghu/work/projects/matrixMultiply/hls/mmult/solution1/impl/ip/vivado.log
+# Journal file: /home/raghu/work/projects/matrixMultiply/hls/mmult/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

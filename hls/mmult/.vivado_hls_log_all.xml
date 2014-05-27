@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTGEN-101] Setting dangling out port 'mmult_top/b_dataout' to 0." projectName="mmult" solutionName="solution1" date="2014-05-27T15:52:57.428-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Setting dangling out port 'mmult_top/a_dataout' to 0." projectName="mmult" solutionName="solution1" date="2014-05-27T15:52:57.358-0700" type="Warning"/>
+        <logs message="@W [XFORM-104] Completely partitioning array 'crow' (mmult/mmult_top.cpp:29) accessed through non-constant indices on dimension 1 (mmult/mmult_top.cpp:62:130), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="mmult" solutionName="solution1" date="2014-05-27T15:52:46.438-0700" type="Warning"/>
+        <logs message="@W [XFORM-104] Completely partitioning array 'brow' (mmult/mmult_top.cpp:29) accessed through non-constant indices on dimension 1 (mmult/mmult_top.cpp:47), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="mmult" solutionName="solution1" date="2014-05-27T15:52:46.431-0700" type="Warning"/>
+        <logs message="@W [XFORM-104] Completely partitioning array 'arow' (mmult/mmult_top.cpp:29) accessed through non-constant indices on dimension 1 (mmult/mmult_top.cpp:46), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="mmult" solutionName="solution1" date="2014-05-27T15:52:46.415-0700" type="Warning"/>
+        <logs message="@W [XFORM-505] Pipeline directive for loop 'Loop-1.2' (mmult/mmult_top.cpp:51) in function 'mmult_top' has been removed because the loop is unrolled completely." projectName="mmult" solutionName="solution1" date="2014-05-27T15:52:46.387-0700" type="Warning"/>
+        <logs message="@W [SYNCHK-23] mmult/mmult_top.cpp:46: variable-indexed range selection may cause suboptimal QoR." projectName="mmult" solutionName="solution1" date="2014-05-27T15:52:46.098-0700" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
