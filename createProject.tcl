@@ -46,6 +46,9 @@ set obj [get_projects matrixMultiply]
 set_property "board" "xilinx.com:zynq:zc706:1.1" $obj
 set_property "simulator_language" "Mixed" $obj
 
+# Create block design
+source createbd.tcl
+
 # Create 'sources_1' fileset (if not found)
 if {[string equal [get_filesets sources_1] ""]} {
   create_fileset -srcset sources_1
