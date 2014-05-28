@@ -2,7 +2,7 @@
 <RtlPorts>
 <name>a</name>
 <CType>
-<TypeName>int256</TypeName>
+<TypeName>uint256</TypeName>
 <TypeWidth>256</TypeWidth>
 </CType>
 <CFractionWidth>0</CFractionWidth>
@@ -11,7 +11,7 @@
 <RtlPorts>
 <name>b</name>
 <CType>
-<TypeName>int256</TypeName>
+<TypeName>uint256</TypeName>
 <TypeWidth>256</TypeWidth>
 </CType>
 <CFractionWidth>0</CFractionWidth>
@@ -20,7 +20,7 @@
 <RtlPorts>
 <name>c</name>
 <CType>
-<TypeName>int256</TypeName>
+<TypeName>uint256</TypeName>
 <TypeWidth>256</TypeWidth>
 </CType>
 <CFractionWidth>0</CFractionWidth>

@@ -289,13 +289,13 @@ set gport25 [list $gportName25 $gportInterface25 $gportData25 $gportPointer25 $g
 lappend globalVariable $gport25
 set staticVariable ""
 set moduleName "mmult_top"
-set rawDecl [list "void" "mmult_top\(int256 a\[8192\], int256 b\[8192\], int256 c\[8192\]\)"]
-set argAPint [list int256]
+set rawDecl [list "void" "mmult_top\(uint256 a\[8192\], uint256 b\[8192\], uint256 c\[8192\]\)"]
+set argAPint [list uint256]
 set returnAPint ""
 set portList ""
 set portName0 "a"
 set portInterface0 "[list bus 0]"
-set portData0 "int256"
+set portData0 "uint256"
 set portPointer0 "0"
 set portArrayDim0 [list 8192]
 set portConst0 "0"
@@ -305,7 +305,7 @@ set port0 [list $portName0 $portInterface0 $portData0 $portPointer0 $portArrayDi
 lappend portList $port0
 set portName1 "b"
 set portInterface1 "[list bus 0]"
-set portData1 "int256"
+set portData1 "uint256"
 set portPointer1 "0"
 set portArrayDim1 [list 8192]
 set portConst1 "0"
@@ -315,7 +315,7 @@ set port1 [list $portName1 $portInterface1 $portData1 $portPointer1 $portArrayDi
 lappend portList $port1
 set portName2 "c"
 set portInterface2 "[list bus 0]"
-set portData2 "int256"
+set portData2 "uint256"
 set portPointer2 "0"
 set portArrayDim2 [list 8192]
 set portConst2 "0"

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'mmult_top'" level="0">
-<item name = "Date">Tue May 27 16:49:55 2014
+<item name = "Date">Wed May 28 13:42:49 2014
 </item>
 <item name = "Version">2013.3 (build date: Wed Oct 16 18:12:55 PM 2013)</item>
 <item name = "Project">mmult</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">13825, 13825, 13826, 13826, none</column>
+<column name="">574721, 574721, 574722, 574722, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,11 +35,14 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">13824, 13824, 216, -, -, 64, no</column>
-<column name=" + Loop 1.1">128, 128, 16, -, -, 8, no</column>
-<column name="  ++ Loop 1.1.1">8, 8, 1, -, -, 8, no</column>
-<column name=" + Loop 1.2">80, 80, 10, -, -, 8, no</column>
-<column name="  ++ Loop 1.2.1">8, 8, 1, -, -, 8, no</column>
+<column name="- Loop 1">574720, 574720, 8980, -, -, 64, no</column>
+<column name=" + Loop 1.1">192, 192, 24, -, -, 8, no</column>
+<column name="  ++ Loop 1.1.1">16, 16, 2, -, -, 8, no</column>
+<column name=" + Loop 1.2">8640, 8640, 135, -, -, 64, no</column>
+<column name="  ++ Loop 1.2.1">128, 128, 16, -, -, 8, no</column>
+<column name="   +++ Loop 1.2.1.1">8, 8, 1, -, -, 8, no</column>
+<column name=" + Loop 1.3">144, 144, 18, -, -, 8, no</column>
+<column name="  ++ Loop 1.3.1">16, 16, 2, -, -, 8, no</column>
 </table>
 </item>
 </section>

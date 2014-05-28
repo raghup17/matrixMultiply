@@ -4146,15 +4146,11 @@
 		<spirit:fileSet>
 			<spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
 			<spirit:file>
+				<spirit:name>hdl/verilog/mmult_top_mul_32s_32s_32_6.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
 				<spirit:name>hdl/verilog/mmult_top_b_if.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/mmult_top_ap_rst_if.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/mmult_top_a_if.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -4162,11 +4158,11 @@
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/mmult_top.v</spirit:name>
+				<spirit:name>hdl/verilog/mmult_top_c_if.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/mmult_top_mul_32s_32s_32_6.v</spirit:name>
+				<spirit:name>hdl/verilog/mmult_top.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -4174,7 +4170,11 @@
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/mmult_top_c_if.v</spirit:name>
+				<spirit:name>hdl/verilog/mmult_top_a_if.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>hdl/verilog/mmult_top_ap_rst_if.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -4188,15 +4188,11 @@
 		<spirit:fileSet>
 			<spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
 			<spirit:file>
+				<spirit:name>hdl/verilog/mmult_top_mul_32s_32s_32_6.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
 				<spirit:name>hdl/verilog/mmult_top_b_if.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/mmult_top_ap_rst_if.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/mmult_top_a_if.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -4204,11 +4200,11 @@
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/mmult_top.v</spirit:name>
+				<spirit:name>hdl/verilog/mmult_top_c_if.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/mmult_top_mul_32s_32s_32_6.v</spirit:name>
+				<spirit:name>hdl/verilog/mmult_top.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -4216,32 +4212,16 @@
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/mmult_top_c_if.v</spirit:name>
+				<spirit:name>hdl/verilog/mmult_top_a_if.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>hdl/verilog/mmult_top_ap_rst_if.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 		</spirit:fileSet>
 		<spirit:fileSet>
 			<spirit:name>xilinx_softwaredriver_view_fileset</spirit:name>
-			<spirit:file>
-				<spirit:name>drivers/mmult_top_top_v2_00_a/data/mmult_top_top_v2_1_0.tcl</spirit:name>
-				<spirit:fileType>tclSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>drivers/mmult_top_top_v2_00_a/data/mmult_top_top_v2_1_0.mdd</spirit:name>
-				<spirit:userFileType>mdd</spirit:userFileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>drivers/mmult_top_top_v2_00_a/src/xmmult_top_linux.c</spirit:name>
-				<spirit:fileType>cSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>drivers/mmult_top_top_v2_00_a/src/xmmult_top.h</spirit:name>
-				<spirit:fileType>cSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>drivers/mmult_top_top_v2_00_a/src/Makefile</spirit:name>
-				<spirit:fileType>unknown</spirit:fileType>
-			</spirit:file>
 			<spirit:file>
 				<spirit:name>drivers/mmult_top_top_v2_00_a/src/xmmult_top_sinit.c</spirit:name>
 				<spirit:fileType>cSource</spirit:fileType>
@@ -4251,8 +4231,28 @@
 				<spirit:fileType>cSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
+				<spirit:name>drivers/mmult_top_top_v2_00_a/src/xmmult_top.h</spirit:name>
+				<spirit:fileType>cSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
 				<spirit:name>drivers/mmult_top_top_v2_00_a/src/xmmult_top.c</spirit:name>
 				<spirit:fileType>cSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>drivers/mmult_top_top_v2_00_a/src/Makefile</spirit:name>
+				<spirit:fileType>unknown</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>drivers/mmult_top_top_v2_00_a/src/xmmult_top_linux.c</spirit:name>
+				<spirit:fileType>cSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>drivers/mmult_top_top_v2_00_a/data/mmult_top_top_v2_1_0.tcl</spirit:name>
+				<spirit:fileType>tclSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>drivers/mmult_top_top_v2_00_a/data/mmult_top_top_v2_1_0.mdd</spirit:name>
+				<spirit:userFileType>mdd</spirit:userFileType>
 			</spirit:file>
 		</spirit:fileSet>
 		<spirit:fileSet>
@@ -4663,7 +4663,7 @@
 				<xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
 			</xilinx:taxonomies>
 			<xilinx:displayName>Mmult_top</xilinx:displayName>
-			<xilinx:coreCreationDateTime>2014-05-27T23:50:21Z</xilinx:coreCreationDateTime>
+			<xilinx:coreCreationDateTime>2014-05-28T20:43:00Z</xilinx:coreCreationDateTime>
 		</xilinx:coreExtensions>
 		<xilinx:packagingInfo>
 			<xilinx:xilinxVersion>2013.3</xilinx:xilinxVersion>

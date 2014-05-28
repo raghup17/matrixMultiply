@@ -2,7 +2,7 @@
 <DARoots Version="1" Minor="30">
   <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/mmult_top.v">
+    <File Path="$PPRDIR/mmult_top_mul_32s_32s_32_6.v">
       <FileInfo>
         <Attr Name="UsedInSynthesis" Val="1"/>
         <Attr Name="UsedInImplementation" Val="1"/>
@@ -12,7 +12,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/mmult_top_mul_32s_32s_32_6.v">
+    <File Path="$PPRDIR/mmult_top.v">
       <FileInfo>
         <Attr Name="UsedInSynthesis" Val="1"/>
         <Attr Name="UsedInImplementation" Val="1"/>

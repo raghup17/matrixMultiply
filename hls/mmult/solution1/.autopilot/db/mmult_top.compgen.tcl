@@ -127,11 +127,11 @@ eval "::AESL_LIB_XILADAPTER::axi_master_gen { \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \
-    dir O \
+    dir IO \
     corename AXI4M \
     op interface \
     metadata {} \
-    latency 1 \
+    latency 4 \
     data_wd ${DataWd} \
 }"
 } else {

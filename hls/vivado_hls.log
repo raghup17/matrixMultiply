@@ -5,11 +5,11 @@
   Copyright (C) 2013 Xilinx Inc. All rights reserved.
 ================================================================
 @I [LIC-101] Checked out feature [HLS]
-@I [HLS-10] Running '/home/raghu/work/tools/xilinx/Vivado_HLS/2013.3/bin/unwrapped/lnx64.o/vivado_hls'
-            for user 'raghu' on host 'raghu-office' (Linux_x86_64 version 3.11.0-17-generic) on Tue May 27 16:49:12 PDT 2014
-            in directory '/home/raghu/work/projects/matrixMultiply/hls'
-@I [HLS-10] Opening project '/home/raghu/work/projects/matrixMultiply/hls/mmult'.
-@I [HLS-10] Opening solution '/home/raghu/work/projects/matrixMultiply/hls/mmult/solution1'.
+@I [HLS-10] Running '/home/raghu/tools/xilinx/Vivado_HLS/2013.3/bin/unwrapped/lnx64.o/vivado_hls'
+            for user 'raghu' on host 'tflop2.Stanford.EDU' (Linux_x86_64 version 3.2.0-32-generic) on Wed May 28 13:42:19 PDT 2014
+            in directory '/home/raghu/w/vivadoProjects/matrixMultiply/hls'
+@I [HLS-10] Opening project '/home/raghu/w/vivadoProjects/matrixMultiply/hls/mmult'.
+@I [HLS-10] Opening solution '/home/raghu/w/vivadoProjects/matrixMultiply/hls/mmult/solution1'.
 @I [SYN-201] Setting up clock 'default' with a period of 10ns.
 @I [HLS-10] Setting target device to 'xc7z045ffg900-1'
 @I [HLS-10] Analyzing design file 'mmult/mmult_top.cpp' ... 
@@ -18,15 +18,15 @@
 @W [SYNCHK-23] mmult/mmult_top.cpp:46: variable-indexed range selection may cause suboptimal QoR.
 @I [SYNCHK-10] 0 error(s), 1 warning(s).
 @I [HLS-10] Starting code transformations ...
-@I [XFORM-501] Unrolling loop 'Loop-1.2' (mmult/mmult_top.cpp:51) in function 'mmult_top' completely.
-@W [XFORM-505] Pipeline directive for loop 'Loop-1.2' (mmult/mmult_top.cpp:51) in function 'mmult_top' has been removed because the loop is unrolled completely.
+@I [XFORM-501] Unrolling loop 'Loop-1.2.2' (mmult/mmult_top.cpp:68) in function 'mmult_top' completely.
+@W [XFORM-505] Pipeline directive for loop 'Loop-1.2.2' (mmult/mmult_top.cpp:68) in function 'mmult_top' has been removed because the loop is unrolled completely.
 @W [XFORM-104] Completely partitioning array 'arow' (mmult/mmult_top.cpp:29) accessed through non-constant indices on dimension 1 (mmult/mmult_top.cpp:46), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
 @I [XFORM-101] Partitioning array 'arow' (mmult/mmult_top.cpp:29) in dimension 1 completely.
-@W [XFORM-104] Completely partitioning array 'brow' (mmult/mmult_top.cpp:29) accessed through non-constant indices on dimension 1 (mmult/mmult_top.cpp:47), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+@W [XFORM-104] Completely partitioning array 'brow' (mmult/mmult_top.cpp:29) accessed through non-constant indices on dimension 1 (mmult/mmult_top.cpp:63), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
 @I [XFORM-101] Partitioning array 'brow' (mmult/mmult_top.cpp:29) in dimension 1 completely.
-@W [XFORM-104] Completely partitioning array 'crow' (mmult/mmult_top.cpp:29) accessed through non-constant indices on dimension 1 (mmult/mmult_top.cpp:62:130), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+@W [XFORM-104] Completely partitioning array 'crow' (mmult/mmult_top.cpp:29) accessed through non-constant indices on dimension 1 (mmult/mmult_top.cpp:81:130), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
 @I [XFORM-101] Partitioning array 'crow' (mmult/mmult_top.cpp:29) in dimension 1 completely.
-@I [HLS-111] Elapsed time: 7.49 seconds; current memory usage: 73.2 MB.
+@I [HLS-111] Elapsed time: 6.75 seconds; current memory usage: 86.4 MB.
 @I [HLS-10] Starting hardware synthesis ...
 @I [HLS-10] Synthesizing 'mmult_top' ...
 @I [HLS-10] ----------------------------------------------------------------
@@ -34,7 +34,7 @@
 @I [HLS-10] ----------------------------------------------------------------
 @I [SCHED-11] Starting scheduling ...
 @I [SCHED-11] Finished scheduling.
-@I [HLS-111] Elapsed time: 5.18 seconds; current memory usage: 82.2 MB.
+@I [HLS-111] Elapsed time: 9.49 seconds; current memory usage: 90.2 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Exploring micro-architecture for module 'mmult_top' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -43,7 +43,7 @@
 @I [BIND-101] Exploring resource sharing.
 @I [BIND-101] Binding ...
 @I [BIND-100] Finished micro-architecture generation.
-@I [HLS-111] Elapsed time: 0.34 seconds; current memory usage: 85.3 MB.
+@I [HLS-111] Elapsed time: 0.7 seconds; current memory usage: 102 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Generating RTL for module 'mmult_top' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -55,7 +55,7 @@
 @W [RTGEN-101] Setting dangling out port 'mmult_top/b_dataout' to 0.
 @I [RTGEN-100] Generating core module 'mmult_top_mul_32s_32s_32_6': 64 instance(s).
 @I [RTGEN-100] Finished creating RTL model for 'mmult_top'.
-@I [HLS-111] Elapsed time: 0.74 seconds; current memory usage: 88.5 MB.
+@I [HLS-111] Elapsed time: 2.13 seconds; current memory usage: 112 MB.
 @I [RTMG-282] Generating pipelined core: 'mmult_top_mul_32s_32s_32_6_MulnS_0'
 @I [HLS-10] Finished generating all RTL models.
 @I [WSYSC-301] Generating RTL SystemC for 'mmult_top'.
@@ -70,10 +70,10 @@
 
 INFO: [Common 17-78] Attempting to get a license: Implementation
 INFO: [Common 17-81] Feature available: Implementation
-INFO: [Device 21-36] Loading parts and site information from /home/raghu/work/tools/xilinx/Vivado/2013.3/data/parts/arch.xml
-Parsing RTL primitives file [/home/raghu/work/tools/xilinx/Vivado/2013.3/data/parts/xilinx/rtl/prims/rtl_prims.xml]
-Finished parsing RTL primitives file [/home/raghu/work/tools/xilinx/Vivado/2013.3/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+INFO: [Device 21-36] Loading parts and site information from /home/raghu/tools/xilinx/Vivado/2013.3/data/parts/arch.xml
+Parsing RTL primitives file [/home/raghu/tools/xilinx/Vivado/2013.3/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/home/raghu/tools/xilinx/Vivado/2013.3/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 source run_ippack.tcl -notrace
-INFO: [Common 17-206] Exiting Vivado at Tue May 27 16:50:21 2014...
-@I [HLS-112] Total elapsed time: 91.939 seconds; peak memory usage: 88.5 MB.
+INFO: [Common 17-206] Exiting Vivado at Wed May 28 13:43:00 2014...
+@I [HLS-112] Total elapsed time: 53.508 seconds; peak memory usage: 112 MB.
 @I [LIC-101] Checked in feature [HLS]
