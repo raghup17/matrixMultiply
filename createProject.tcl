@@ -71,6 +71,7 @@ add_files -norecurse -fileset $obj $files
 
 # Set 'sources_1' fileset properties
 set obj [get_filesets sources_1]
+set_property "ip_repo_paths" "$orig_proj_dir/hls/mmult/solution1/impl" $obj
 set_property "top" "matrixMultiply_wrapper" $obj
 
 # Create 'constrs_1' fileset (if not found)
