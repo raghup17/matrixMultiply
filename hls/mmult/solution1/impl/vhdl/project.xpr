@@ -6,7 +6,7 @@
 	<FileSet Dir="sim_1" File="fileset.xml"/>
 	<DefaultLaunch Dir="$PRUNDIR"/>
 	<Config>
-		<Option Name="Id" Val="cddb1166eaa14f10851e4d0ff2e705a9"/>
+		<Option Name="Id" Val="25175b7834bf4afe8b259235a1e5f189"/>
 		<Option Name="Part" Val="xc7z045ffg900-1"/>
 		<Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
 		<Option Name="Board" Val=""/>

@@ -68,7 +68,7 @@ void mmult_top(BRAM_DT a[RAM_DEPTH], BRAM_DT b[RAM_DEPTH], BRAM_DT c[RAM_DEPTH])
             for (unsigned int t1=0; t1<BDIM; t1++) {
 #pragma HLS UNROLL skip_exit_check
 #pragma HLS PIPELINE
-    		    crow[t1] += arow[t1] * brow[t1];
+    		    crow[t1] += arow[rowIdxB] * brow[t1];
     	    }
         }
 

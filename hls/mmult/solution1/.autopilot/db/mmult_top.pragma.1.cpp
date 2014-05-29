@@ -45373,7 +45373,7 @@ _ssdm_SpecArrayPartition( crow, 1, "COMPLETE", 0, "");
             for (unsigned int t1=0; t1<64; t1++) {_ssdm_RegionBegin("hls_label_0");
 _ssdm_Unroll(0,0,0, "");
 _ssdm_op_SpecPipeline(1, 1, 1, "");
- crow[t1] += arow[t1] * brow[t1];
+ crow[t1] += arow[rowIdxB] * brow[t1];
          _ssdm_RegionEnd("hls_label_0");}
         }
 

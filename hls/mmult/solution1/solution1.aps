@@ -40,7 +40,7 @@
         </UIAutoSimConf>
     </UIConfigurations>
     <ExportDesign askAgain="true" evaluate="false" formatName="ip_catalog" rtl="verilog">
-        <Format description="" formatName="ip_catalog" library="" vendor="" version="2.0" display_name="" taxonomy=""/>
+        <Format description="" formatName="ip_catalog" library="" vendor="" version="3.0" display_name="" taxonomy=""/>
         <Format formatName="sysgen"/>
         <Format formatName="sysgen_ise"/>
         <Format formatName="syn_dcp"/>

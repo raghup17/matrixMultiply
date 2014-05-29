@@ -4,6 +4,6 @@
   <xd:arg xd:name="a[]" xd:originalName="a" xd:direction="in" xd:interfaceRef="M_AXI_A" xd:busTypeRef="aximm"/>
   <xd:arg xd:name="b[]" xd:originalName="b" xd:direction="in" xd:interfaceRef="M_AXI_B" xd:busTypeRef="aximm"/>
   <xd:arg xd:name="c[]" xd:originalName="c" xd:direction="inout" xd:interfaceRef="M_AXI_C" xd:busTypeRef="aximm"/>
-  <xd:latencyEstimates xd:best-case="574721" xd:worst-case="574721" xd:average-case="574721"/>
-  <xd:resourceEstimates xd:LUT="12815" xd:FF="18482" xd:BRAM="0" xd:DSP="256"/>
+  <xd:latencyEstimates xd:best-case="578817" xd:worst-case="578817" xd:average-case="578817"/>
+  <xd:resourceEstimates xd:LUT="13489" xd:FF="20568" xd:BRAM="0" xd:DSP="256"/>
 </xd:acceleratorMap>

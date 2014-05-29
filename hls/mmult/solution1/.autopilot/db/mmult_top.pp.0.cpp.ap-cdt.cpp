@@ -45373,7 +45373,7 @@ void mmult_top(uint256 a[8192], uint256 b[8192], uint256 c[8192])
             for (unsigned int t1=0; t1<64; t1++) {_ssdm_RegionBegin("hls_label_0");
 #pragma HLS UNROLL skip_exit_check
 #pragma HLS PIPELINE
- crow[t1] += arow[t1] * brow[t1];
+ crow[t1] += arow[rowIdxB] * brow[t1];
          _ssdm_RegionEnd("hls_label_0");}
         }
 #pragma empty_line

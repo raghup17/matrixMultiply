@@ -5,7 +5,7 @@
 	<spirit:vendor>xilinx.com</spirit:vendor>
 	<spirit:library>hls</spirit:library>
 	<spirit:name>mmult_top</spirit:name>
-	<spirit:version>2.0</spirit:version>
+	<spirit:version>3.0</spirit:version>
 	<spirit:busInterfaces>
 		<spirit:busInterface>
 			<spirit:name>M_AXI_A</spirit:name>
@@ -4223,35 +4223,35 @@
 		<spirit:fileSet>
 			<spirit:name>xilinx_softwaredriver_view_fileset</spirit:name>
 			<spirit:file>
-				<spirit:name>drivers/mmult_top_top_v2_00_a/src/xmmult_top_sinit.c</spirit:name>
+				<spirit:name>drivers/mmult_top_top_v3_00_a/src/xmmult_top_sinit.c</spirit:name>
 				<spirit:fileType>cSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/mmult_top_top_v2_00_a/src/xmmult_top_hw.h</spirit:name>
+				<spirit:name>drivers/mmult_top_top_v3_00_a/src/xmmult_top_hw.h</spirit:name>
 				<spirit:fileType>cSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/mmult_top_top_v2_00_a/src/xmmult_top.h</spirit:name>
+				<spirit:name>drivers/mmult_top_top_v3_00_a/src/xmmult_top.h</spirit:name>
 				<spirit:fileType>cSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/mmult_top_top_v2_00_a/src/xmmult_top.c</spirit:name>
+				<spirit:name>drivers/mmult_top_top_v3_00_a/src/xmmult_top.c</spirit:name>
 				<spirit:fileType>cSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/mmult_top_top_v2_00_a/src/Makefile</spirit:name>
+				<spirit:name>drivers/mmult_top_top_v3_00_a/src/Makefile</spirit:name>
 				<spirit:fileType>unknown</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/mmult_top_top_v2_00_a/src/xmmult_top_linux.c</spirit:name>
+				<spirit:name>drivers/mmult_top_top_v3_00_a/src/xmmult_top_linux.c</spirit:name>
 				<spirit:fileType>cSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/mmult_top_top_v2_00_a/data/mmult_top_top_v2_1_0.tcl</spirit:name>
+				<spirit:name>drivers/mmult_top_top_v3_00_a/data/mmult_top_top_v2_1_0.tcl</spirit:name>
 				<spirit:fileType>tclSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/mmult_top_top_v2_00_a/data/mmult_top_top_v2_1_0.mdd</spirit:name>
+				<spirit:name>drivers/mmult_top_top_v3_00_a/data/mmult_top_top_v2_1_0.mdd</spirit:name>
 				<spirit:userFileType>mdd</spirit:userFileType>
 			</spirit:file>
 		</spirit:fileSet>
@@ -4272,7 +4272,7 @@
 		<spirit:fileSet>
 			<spirit:name>xilinx_xpgui_view_fileset</spirit:name>
 			<spirit:file>
-				<spirit:name>xgui/mmult_top_v2_0.tcl</spirit:name>
+				<spirit:name>xgui/mmult_top_v3_0.tcl</spirit:name>
 				<spirit:fileType>tclSource</spirit:fileType>
 				<spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
 			</spirit:file>
@@ -4651,7 +4651,7 @@
 			<spirit:name>Component_Name</spirit:name>
 			<spirit:value spirit:resolve="user"
 					spirit:id="PARAM_VALUE.Component_Name"
-					spirit:order="1">mmult_top_v2_0</spirit:value>
+					spirit:order="1">mmult_top_v3_0</spirit:value>
 		</spirit:parameter>
 	</spirit:parameters>
 	<spirit:vendorExtensions>
@@ -4663,7 +4663,7 @@
 				<xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
 			</xilinx:taxonomies>
 			<xilinx:displayName>Mmult_top</xilinx:displayName>
-			<xilinx:coreCreationDateTime>2014-05-28T20:43:00Z</xilinx:coreCreationDateTime>
+			<xilinx:coreCreationDateTime>2014-05-29T02:05:03Z</xilinx:coreCreationDateTime>
 		</xilinx:coreExtensions>
 		<xilinx:packagingInfo>
 			<xilinx:xilinxVersion>2013.3</xilinx:xilinxVersion>
