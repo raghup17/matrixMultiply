@@ -4,12 +4,12 @@ from dma import Dma
 from utils import *
 # Matrix parameters
 SIZE = 1024
-BSIZE = 64
+BSIZE = 16
 DT = 32
 
 
 # Compute parameters
-NUM_COMPUTE_UNITS = 4  # Number of matrix multiplier compute units
+NUM_COMPUTE_UNITS = 32  # Number of matrix multiplier compute units
 TMADD = 3
 
 # Memory parameters
@@ -28,7 +28,7 @@ C_SHARING = 1
 # DMA parameters
 DMA_WIDTH = 256
 DMA_BURST_LENGTH = 16
-DMA_BURST_OVERHEAD = 3
+DMA_BURST_OVERHEAD = 8
 
 
 # --- Inferred parameters ---
@@ -51,7 +51,7 @@ memB = Memory(SIZE_IN_BITS, B_SHARING, B_PORTS, C_PORT_WIDTH)
 memC = Memory(SIZE_IN_BITS, C_SHARING, C_PORTS, C_PORT_WIDTH)
 
 # Instantiate compute unit, calculate total compute time
-computeUnit = Compute(memA, memB, memC, TMADD)
+computeUnit = Compute(memA, memB, memC, TMADD, BSIZE)
 computeTime = computeUnit.getComputeTime(BSIZE, DT)
 totalComputeTime = computeTime * NUM_BLOCK_MULTIPLIES_COMPUTE_UNIT
 
@@ -64,12 +64,20 @@ numDmaPerBlockC = (SIZE/BSIZE) * 2
 totalNumDma = (NUM_BLOCKS) * (numDmaPerBlockA + numDmaPerBlockB + numDmaPerBlockC)
 totalDmaTime = totalNumDma * dmaCostPerBlock
 
-print "DMA cost per block: %d" %(dmaCostPerBlock)
-print "Total number of DMA: %d" %(totalNumDma)
-
 totalTime = totalComputeTime + totalDmaTime
 computePercent = float(totalComputeTime) * 100 / totalTime
 dmaPercent = float(totalDmaTime) * 100 / totalTime
 
+memoryArea = memA.getArea() * NUM_A_REQD + memB.getArea() * NUM_B_REQD + memC.getArea() * NUM_C_REQD
+computeArea = computeUnit.getArea() * NUM_COMPUTE_UNITS
+
+print ""
+print " -- STATS FROM MODELING MATRIX MULTIPLY -- "
+print "SIZE = %d, BSIZE = %d" %(SIZE, BSIZE)
+print "NUM_COMPUTE_UNITS = %d" %(NUM_COMPUTE_UNITS)
 print "Total compute time: %d (%f %%)" %(totalComputeTime, computePercent)
 print "Total DMA time: %d (%f %%)" %(totalDmaTime, dmaPercent)
+
+print ""
+print "Memory area: %d" %(memoryArea)
+print "Compute area: %d" %(computeArea)

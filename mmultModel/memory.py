@@ -10,8 +10,10 @@ class Memory:
         self.area = sizeInBits/(2^20)
         self.accessTime = max((float(self.sharing)/self.ports), 1)
 
+    def getNumAccesses(self, numBits):
+        return math.ceil(float(numBits)/self.portWidth)
     def getAccessTime(self, numBits):
-        return math.ceil(float(numBits)/self.portWidth)*self.accessTime
+        return self.getNumAccesses(numBits)*self.accessTime
 
     def getArea(self):
         return self.area
