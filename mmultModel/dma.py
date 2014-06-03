@@ -7,7 +7,7 @@ class Dma:
         self.burstOverhead = burstOverhead
 
     def calcNumBursts(self, transferSizeBits):
-        return (float(self.width) * self.burstLength) / transferSizeBits
+        return float(transferSizeBits) / (self.width * self.burstLength)
 
     def calcBurstTime(self, numBursts):
         wholeBursts = int(numBursts)
@@ -21,5 +21,6 @@ class Dma:
     def getDmaTime(self, sizeInBits):
         numBursts = self.calcNumBursts(sizeInBits)
         burstTime = self.calcBurstTime(numBursts)
+        print "Required %f number of bursts to transfer %d bits" %(numBursts, sizeInBits)
         return burstTime
 

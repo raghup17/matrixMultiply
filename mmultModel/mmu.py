@@ -3,13 +3,13 @@ from memory import Memory
 from dma import Dma
 from utils import *
 # Matrix parameters
-SIZE = 512
+SIZE = 1024
 BSIZE = 64
 DT = 32
 
 
 # Compute parameters
-NUM_COMPUTE_UNITS = 8  # Number of matrix multiplier compute units
+NUM_COMPUTE_UNITS = 4  # Number of matrix multiplier compute units
 TMADD = 3
 
 # Memory parameters
@@ -27,8 +27,8 @@ C_SHARING = 1
 
 # DMA parameters
 DMA_WIDTH = 256
-DMA_BURST_LENGTH = 8
-DMA_BURST_OVERHEAD = 10
+DMA_BURST_LENGTH = 16
+DMA_BURST_OVERHEAD = 3
 
 
 # --- Inferred parameters ---
